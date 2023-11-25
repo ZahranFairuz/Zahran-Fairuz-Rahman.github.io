@@ -1,0 +1,83 @@
+@media  screen and (max-width: 930px) {
+  nav .togglebtn{
+    display: initial;
+  }
+  .click{
+    top: 45px;
+  }
+  .click span{
+    position: absolute;
+    margin-top: 12px;
+  }
+  .click span:first-child{
+    transform: rotate(-40deg);
+  }
+  .click span:nth-child(2){
+    opacity: 0;
+    margin: 0;
+  }
+  .click span:last-child{
+    transform: rotate(45deg);
+    top: 0;
+  }
+  nav .navlinks{
+    position: absolute;
+    top: 110px;
+    right: -100%;
+    bottom: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #222;
+    z-index: 3;
+    box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    padding: 25px 0;
+  }
+  nav .navlinks li{
+    display: block;
+  }
+  nav .navlinks li a{
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  nav .navlinks.open{
+    right: 0;
+  }
+  }
+  @media(max-width:768){
+    .container{
+      flex-direction: column-reverse;
+      padding-top: 2rem;
+    }
+    .hero-text{
+      padding: 40px 0;
+    }
+  }
+  
+
+
+
+@media (max-width:820px) {
+    .contact{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .contact .contact-title{
+      flex-direction: column-reverse;
+    }
+    .contact .contact-title .left-side {
+      width: 100%;
+      flex-direction: row;
+      margin-top: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .contact .contact-title .left-side::before{
+      display: none;
+    }
+    .contact .contact-title .right-side{
+      width: 100%;
+      margin-left: 0;
+    }
+  }
